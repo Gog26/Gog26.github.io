@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключаем CSS -->
+</head>
+<body>
+
+    <!-- Общий заголовок -->
+    <header class="top-header">
+        <h1>Administration</h1>
+    </header>
+
+    <!-- Контейнер для всей страницы -->
+    <div class="admin-container">
+        
+     
+        <nav class="sidebar">
+            <ul>
+                <li><a href="new.html">Produkter</a></li>
+                <!-- Добавить другие разделы меню при необходимости -->
+            </ul>
+        </nav>
+
+        <!-- Основная часть страницы -->
+        <div class="main-content">
+                    
+            <!-- Заголовок и кнопка добавления продукта -->
+            <div class="header">
+                
+                                    
+                <h2>Produkter</h2>
+            
+                <!-- Кнопка-ссылка для добавления нового продукта -->
+                <a href="nyprodukt.html" class="btn-add">Ny produkt</a>
+            </div>
+
+            <!-- Таблица продуктов -->
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Namn</th>
+                        <th>SKU</th>
+                        <th>Pris</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Svart T-Shirt</td>
+                        <td>AAA111</td>
+                        <td>199</td>
+                    </tr>
+                    <tr>
+                        <td>Vit T-Shirt</td>
+                        <td>BBB111</td>
+                        <td>199</td>
+                    </tr>
+
+                    <tr>
+                        <td>...</td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

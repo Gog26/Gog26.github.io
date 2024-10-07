@@ -1,0 +1,243 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Общая строка с заголовком "Administration" */
+.top-header {
+    width: 100%;
+    background-color: #333; /* Темный фон для заголовка */
+    color: white;
+    padding: 10px;
+    text-align: center; /* Центрируем текст */
+}
+
+.top-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Контейнер для всей страницы */
+.admin-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Стили для бокового меню с темным фоном */
+.sidebar {
+    width: 200px;
+    background-color: #e4e4e4;
+    padding: 20px;
+    
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333; /* Цвет для ссылок в боковом меню */
+}
+
+/* Стили для основной части страницы */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5; /* Светлый фон */
+}
+
+/* Стили для заголовка и кнопки */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f0f0f0; /* Фон для заголовка и кнопки */
+    padding: 10px;
+}
+
+.header h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.btn-add {
+    padding: 10px 20px;
+    background-color: #fdfdfd;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid #000000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}
+
+.btn-add:hover {
+    background-color: #45a13d;
+}
+
+/* Таблица продуктов */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: rgb(88, 70, 70);
+}
+
+.product-table th, .product-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+/* Цвет заголовка таблицы */
+.product-table th {
+    background-color: #f0f0f0; /* Светлый фон для заголовков */
+    font-weight: bold;
+}
+
+/* Чередующиеся цвета для строк таблицы */
+.product-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Светлый серый фон для четных строк */
+}
+
+.product-table tr:nth-child(odd) {
+    background-color: #e0e0e0; /* Темнее серый фон для нечетных строк */
+}
+
+
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Общая строка с заголовком "Administration" */
+.top-header {
+    width: 100%;
+    background-color: #333; /* Темный фон для заголовка */
+    color: white;
+    padding: 10px;
+    text-align: center; /* Центрируем текст */
+}
+
+.top-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Контейнер для всей страницы */
+.admin-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Стили для бокового меню с темным фоном */
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333; /* Цвет для ссылок в боковом меню */
+}
+
+/* Стили для основной части страницы */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5; /* Светлый фон */
+}
+
+/* Заголовок формы */
+.main-content h2 {
+    margin-bottom: 20px;
+}
+
+/* Стили для формы */
+.product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px; /* Ограничиваем ширину формы */
+    margin: 0 auto; /* Центрируем форму */
+}
+
+/* Поля формы */
+.product-form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-form input[type="text"],
+.product-form input[type="number"],
+.product-form input[type="file"],
+.product-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Чекбоксы */
+.categories label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.categories input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Кнопка "Lägg till" */
+.btn-submit {
+    padding: 10px 20px;
+    background-color: #37393b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-submit:hover {
+    background-color: #33383d;
+}
+
+.btn-home {
+    padding: 10px 20px;
+    background-color: #1c4d28; /* Зеленый фон */
+    color: white;
+    text-decoration: none;
+    border-radius: 54px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 5px;
+    margin-top: 20px; /* Добавляем отступ сверху */
+}
+

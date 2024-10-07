@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключаем CSS -->
+</head>
+<body>
+
+    <!-- Общий заголовок -->
+    <header class="top-header">
+        <h1>Administration</h1>
+    </header>
+
+    <!-- Контейнер для всей страницы -->
+    <div class="admin-container">
+        
+        <!-- Боковое меню -->
+        <nav class="sidebar">
+            <ul>
+                
+                <li><a href="index.html">Produkter</a></li>
+                
+            </ul>
+        </nav>
+
+        <!-- Основная часть страницы -->
+        <div class="main-content">
+            <h2>Ny produkt</h2>
+            <form class="product-form">
+                
+                <!-- Имя -->
+                <label for="name">Namn</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Описание -->
+                <label for="description">Beskrivning</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+
+                <!-- Выбор файла для загрузки -->
+                <label for="image">Bild</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+
+                <!-- SKU -->
+                <label for="sku">SKU</label>
+                <input type="text" id="sku" name="sku" required>
+
+                <!-- Цена (только цифры) -->
+                <label for="price">Pris</label>
+                <input type="number" id="price" name="price" required>
+
+                <!-- Категории -->
+                <label for="categories">Kategorier</label>
+                <div class="categories">
+                    <label><input type="checkbox" name="categories" value="T-Shirts"> T-Shirts</label>
+                    <label><input type="checkbox" name="categories" value="Sommar"> Sommar</label>
+                    <label><input type="checkbox" name="categories" value="Byxor"> Byxor</label>
+                    <label><input type="checkbox" name="categories" value="Skor"> Skor</label>
+                </div>
+
+                <!-- Кнопка "Lägg till" -->
+                <button type="submit" class="btn-submit">Lägg till</button>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
